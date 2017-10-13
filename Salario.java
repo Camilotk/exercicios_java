@@ -1,58 +1,70 @@
-//feito por Camilo Cunha, cód 555062
-
-import javax.swing.JOptionPane;
-
-class Salario {
-  public static void main (String args []) {
-    Float horas = 0.0f;
-    Float valorHora = 0.0f;
-    int dependentes = 0;
-    //Entrada
-    try {
-    horas = Float.parseFloat(JOptionPane.showInputDialog(null, "Informe as horas trabalhadas"));
-    if(horas<0) {
-      JOptionPane.showMessageDialog(null, "Você informou número negativo, besta.");
-      System.exit(0);
-    }
-    valorHora = Float.parseFloat(JOptionPane.showInputDialog(null, "Informe o valor da Hora."));
-    if(valorHora<0) {
-      JOptionPane.showMessageDialog(null, "Você informou número negativo, besta.");
-      System.exit(0);
-    }
-    dependentes = Integer.parseInt(JOptionPane.showInputDialog(null, "Informe o número de dependentes."));
-    if(dependentes<0) {
-      JOptionPane.showMessageDialog(null, "Você informou número negativo, besta.");
-      System.exit(0);
-    }
-    }catch (Exception e){
-       JOptionPane.showMessageDialog(null,"Erro");
-    }
-    //Calculos
-    Double inss = 0.00;
-    Double ir = 0.00;
-    Double salarioLiquido = 0.00;
+import java.util.Scanner;
+/* Exercicio 9
+ * Autor: Camilo Cunha de Azevedo
+ * 
+ * O programa deverá calcular a contribuição mensal da previdência social de um empregado baseado no seu salário.
+ */
+public class Salario {
+  public static void main (String[] args){
+    //Declaração de Variáveis
+    String nome = " ";
+    double salario = 0.0;
+    double salario_liq = 0.0;
     
-    Float salarioBruto = (horas*valorHora+(50*dependentes));
+    String inss = " ";
+    double desconto = 0.0f;
+    String irrf = " ";
+    double desc = 0.0f;
+      
+    //Cria o Scanner
+    Scanner ler = new Scanner(System.in);
     
-    if (salarioBruto<=1000){
-      inss = (salarioBruto*0.085);
-    }else{
-      inss = (salarioBruto*0.09);
+    //Leituras
+    System.out.println("Digite o nome do funcionário: ");
+    nome = ler.nextLine();
+    System.out.println("Digite o salário do funcionário: ");
+    salario = ler.nextDouble();
+    
+    //Cálculo INSS
+    if (salario <= 1638.38) {
+      inss = "8%";
+      desconto += (salario*0.08);
+    } else if (salario < 1638.38 && salario >= 2765.66) {
+      inss = "9%";
+      desconto += (salario*0.09);
+    } else if (salario > 2765.66 && salario <= 4663.75) {
+      inss = "11%";
+      desconto += (salario*0.11);
+    } else if (salario > 4663.75) {
+      inss = "Teto";
+      desconto += 513.01;
+    } else if (salario > 937.0) {
+      System.out.println("ERR0: Salário não pode ser menor que o Minímo Nacional!" );
     }
     
-    if (salarioBruto<=500) {
-      ir = 0.0;
-    }else{
-      if ((salarioBruto>500) && (salarioBruto<1000)) {
-        ir = (salarioBruto*0.05);
-      }else{
-        if (salarioBruto>1000) {
-          ir = (salarioBruto*0.07);
-        }
-      }
+    //IRRF
+    if (salario>0 && salario<=1862.22) {
+      irrf = "ISENTO";
+      desc = 0;
+    } else if (salario>=1868.23 && salario<=2799.86) {
+      irrf = "7,5%";
+      desc += salario*0.075;
+    } else if (salario>=2799.87 && salario<=3733.19) {
+      irrf = "15%";
+      desc = salario*0.15;
+    } else if (salario>=3733.20 && salario<=4664.68) {
+      irrf = "22,5%";
+      desc = salario*0.225;
+    } else if (salario>=4664.68) {
+      irrf = "27,5%";
+      desc = salario*0.275;
     }
-  salarioLiquido = (salarioBruto-inss-ir);
-  JOptionPane.showMessageDialog(null, "Salario Bruto = "+salarioBruto+"\nInss = "+inss+"\nIr = "+ir+"\nSalário Liquido ="+salarioLiquido);
     
+    //Print na Tela
+    System.out.println("====== CÁLCULO CONTRACHEQUE ====== \nNome: "+nome);
+    System.out.println("Salário Bruto: "+salario);
+    System.out.println("Desconto INSS: "+inss+" Valor: "+desconto);
+    System.out.println("Desconto IRRF: "+irrf+" Valor: "+desc);
+    System.out.println("Líquido: "+(salario-(desconto+desc)));
   }
 }
