@@ -1,2 +1,2 @@
-# POO
-Programação Orientada a Objetos em Java das disciplinas da faculdade em POO I e II
+# Exercicios
+Exercicios das cadeiras de programação em Java I eI II
