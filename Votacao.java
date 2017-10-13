@@ -1,4 +1,4 @@
-//feito por Camilo Cunha, cód 555062
+//feito por Camilo Cunha, cÃ³d 555062
 
 import javax.swing.JOptionPane;
 
@@ -6,12 +6,12 @@ class Votacao {
   public static void main (String args []) {
     int idade = Integer.parseInt(JOptionPane.showInputDialog(null, "Qual a sua idade?"));
     if (idade<16) {
-      JOptionPane.showMessageDialog(null, "Você não pode votar.");
+      JOptionPane.showMessageDialog(null, "VocÃª nÃ£o pode votar.");
     }else{
       if (((idade>=16) && (idade<18)) || (idade>70)) {
-        JOptionPane.showMessageDialog(null, "Seu voto é facultativo.");
+        JOptionPane.showMessageDialog(null, "Seu voto Ã© facultativo.");
       }else{
-        JOptionPane.showMessageDialog(null, "Você é obrigado a votar.");
+        JOptionPane.showMessageDialog(null, "VocÃª Ã© obrigado a votar.");
       }
     }
   }
