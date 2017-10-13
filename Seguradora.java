@@ -1,4 +1,4 @@
-//feito por Camilo Cunha, cód 555062
+//feito por Camilo Cunha, cÃ³d 555062
 
 import javax.swing.JOptionPane;
 
@@ -8,7 +8,7 @@ class Seguradora {
     String clienteNome = JOptionPane.showInputDialog(null, "Digite seu nome");
     int clienteIdade = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite sua idade"));
     String clienteSexo = JOptionPane.showInputDialog(null, "Digite seu sexo (Informe por extenso \"Masculino\" ou \"Feminino\":");
-    int clienteAcidente = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite os acidentes ocorridos nos últimos 2 anos"));
+    int clienteAcidente = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite os acidentes ocorridos nos Ãºltimos 2 anos"));
     
     int taxa = 0;
     
@@ -32,7 +32,7 @@ class Seguradora {
       taxa = (taxa+2);
     }
     
-    JOptionPane.showMessageDialog(null, "A taxa do cliente "+clienteNome+" é de "+taxa+"%");
+    JOptionPane.showMessageDialog(null, "A taxa do cliente "+clienteNome+" Ã© de "+taxa+"%");
       
   }
 }
