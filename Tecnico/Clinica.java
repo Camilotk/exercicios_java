@@ -1,4 +1,4 @@
-//Feito por Camilo Cunha, cód 555062
+//Feito por Camilo Cunha, cÃ³d 555062
 
 import javax.swing.JOptionPane;
 
@@ -59,7 +59,7 @@ class Clinica {
       }
       
     }
-    JOptionPane.showMessageDialog(null, "O número de Paciente foi "+i+"\nA média da idade dos Homens foi "+(mediaIdadeHomens/i)+"\nA quantidade de mulheres com altura entre 1,60 e 1,70 e peso acima de 70kg foi "+mediaMulheres+"\nA quantidade de pessoas com idade entre 18 e 25 "+mediaIdades+"\nO nome do paciente mais velho é "+nomeVelho+"\nO nome da mulher mais baixa é "+mulherBaixa);
+    JOptionPane.showMessageDialog(null, "O nÃºmero de Paciente foi "+i+"\nA mÃ©dia da idade dos Homens foi "+(mediaIdadeHomens/i)+"\nA quantidade de mulheres com altura entre 1,60 e 1,70 e peso acima de 70kg foi "+mediaMulheres+"\nA quantidade de pessoas com idade entre 18 e 25 "+mediaIdades+"\nO nome do paciente mais velho Ã© "+nomeVelho+"\nO nome da mulher mais baixa Ã© "+mulherBaixa);
  }
 }
       
