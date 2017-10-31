@@ -3,8 +3,8 @@ import java.util.*;
 /* Exercicio 13
  * Autor: Camilo Cunha de Azevedo
  * 
- * O programa dever· ler uma palavra, letra por letra, 
- * e dever· informar quantas vogais existem na palavra.
+ * O programa dever√° ler uma palavra, letra por letra, 
+ * e dever√° informar quantas vogais existem na palavra.
  */
 
 public class Palavra {
