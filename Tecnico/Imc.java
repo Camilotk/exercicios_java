@@ -1,4 +1,4 @@
-//feito por Camilo Cunha, cód 555062
+//feito por Camilo Cunha, cÃ³d 555062
 
 import javax.swing.JOptionPane;
 
@@ -14,31 +14,31 @@ class Imc {
     switch (sexo) {
       case "H":
         if (imc<20.7) {
-          JOptionPane.showMessageDialog(null, "Você está abaixo do peso.");
+          JOptionPane.showMessageDialog(null, "VocÃª estÃ¡ abaixo do peso.");
       }else{
         if ((imc>=20.7) && (imc<=26.4)) {
-          JOptionPane.showMessageDialog(null, "Você está no peso ideal.");
+          JOptionPane.showMessageDialog(null, "VocÃª estÃ¡ no peso ideal.");
         }else{
-          JOptionPane.showMessageDialog(null, "Você está acima do peso.");
+          JOptionPane.showMessageDialog(null, "VocÃª estÃ¡ acima do peso.");
         }
       }
         break;
         case "M":
         if (imc<19.1) {
-          JOptionPane.showMessageDialog(null, "Você está abaixo do peso.");
+          JOptionPane.showMessageDialog(null, "VocÃª estÃ¡ abaixo do peso.");
       }else{
         if ((imc>=19.1) && (imc<=25.8)) {
-          JOptionPane.showMessageDialog(null, "Você está no peso ideal.");
+          JOptionPane.showMessageDialog(null, "VocÃª estÃ¡ no peso ideal.");
         }else{
-          JOptionPane.showMessageDialog(null, "Você está acima do peso.");
+          JOptionPane.showMessageDialog(null, "VocÃª estÃ¡ acima do peso.");
         }
       }
         break;
       case "Selvagem":
-        JOptionPane.showMessageDialog(null, "O meu também é.");
+        JOptionPane.showMessageDialog(null, "O meu tambÃ©m Ã©.");
         break;
       default:
-        JOptionPane.showMessageDialog(null, "Você informou algo errado!");
+        JOptionPane.showMessageDialog(null, "VocÃª informou algo errado!");
         break;
     }
   }
