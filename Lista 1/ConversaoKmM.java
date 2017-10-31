@@ -3,9 +3,9 @@ import java.util.*;
  * Autor: Camilo Cunha de Azevedo
  * Disciplina: LAB POOI
  * 
- * O programa dever· calcular a convers„o de km/h para m/s. 
- * O usu·rio dever· informar o valor em km/h 
- * e o programa dever· mostrar o valor da convers„o. 
+ * O programa dever√° calcular a convers√£o de km/h para m/s. 
+ * O usu√°rio dever√° informar o valor em km/h 
+ * e o programa dever√° mostrar o valor da convers√£o. 
  */
 
 public class ConversaoKmM {
@@ -15,6 +15,6 @@ public class ConversaoKmM {
     Scanner ler = new Scanner (System.in);
     System.out.println("Digite o valor em Km/h: ");
     kmh = ler.nextInt();
-    System.out.println("O resultado È "+(kmh/3.6)+" m/s.");
+    System.out.println("O resultado √© "+(kmh/3.6)+" m/s.");
   }
 }
