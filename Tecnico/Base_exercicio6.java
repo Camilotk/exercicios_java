@@ -3,14 +3,14 @@ import java.util.Scanner;
 
 public class Base_exercicio6 {
     public static void main(String[] args) {
-      // o exercício deve calcular o índice de massa corpórea de um número de pessoas
+      // o exercÃ­cio deve calcular o Ã­ndice de massa corpÃ³rea de um nÃºmero de pessoas
       int no_pessoas = 0;
       
-      System.out.println("Indique o número de pessoas a serem avaliadas:");
+      System.out.println("Indique o nÃºmero de pessoas a serem avaliadas:");
       Scanner scan = new Scanner(System.in);
       
       no_pessoas = scan.nextInt();
-      System.out.println(no_pessoas +  "ser�o avaliadas.");
+      System.out.println(no_pessoas +  "serão avaliadas.");
       String[] nomes   = new String[no_pessoas];
       double[] idades  = new double[no_pessoas];
       double[] alturas = new double[no_pessoas];
