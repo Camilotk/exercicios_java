@@ -2,11 +2,11 @@ import java.util.Scanner;
 /* Exercicio 9
  * Autor: Camilo Cunha de Azevedo
  * 
- * O programa dever· calcular a contribuiÁ„o mensal da previdÍncia social de um empregado baseado no seu sal·rio.
+ * O programa dever√° calcular a contribui√ß√£o mensal da previd√™ncia social de um empregado baseado no seu sal√°rio.
  */
 public class Salario {
   public static void main (String[] args){
-    //DeclaraÁ„o de Vari·veis
+    //Declara√ß√£o de Vari√°veis
     String nome = " ";
     double salario = 0.0;
     double salario_liq = 0.0;
@@ -20,12 +20,12 @@ public class Salario {
     Scanner ler = new Scanner(System.in);
     
     //Leituras
-    System.out.println("Digite o nome do funcion·rio: ");
+    System.out.println("Digite o nome do funcion√°rio: ");
     nome = ler.nextLine();
-    System.out.println("Digite o sal·rio do funcion·rio: ");
+    System.out.println("Digite o sal√°rio do funcion√°rio: ");
     salario = ler.nextDouble();
     
-    //C·lculo INSS
+    //C√°lculo INSS
     if (salario <= 1638.38) {
       inss = "8%";
       desconto += (salario*0.08);
@@ -39,7 +39,7 @@ public class Salario {
       inss = "Teto";
       desconto += 513.01;
     } else if (salario > 937.0) {
-      System.out.println("ERR0: Sal·rio n„o pode ser menor que o MinÌmo Nacional!" );
+      System.out.println("ERR0: Sal√°rio n√£o pode ser menor que o Min√≠mo Nacional!" );
     }
     
     //IRRF
@@ -61,10 +61,10 @@ public class Salario {
     }
     
     //Print na Tela
-    System.out.println("====== C¡LCULO CONTRACHEQUE ====== \nNome: "+nome);
-    System.out.println("Sal·rio Bruto: "+salario);
+    System.out.println("====== C√ÅLCULO CONTRACHEQUE ====== \nNome: "+nome);
+    System.out.println("Sal√°rio Bruto: "+salario);
     System.out.println("Desconto INSS: "+inss+" Valor: "+desconto);
     System.out.println("Desconto IRRF: "+irrf+" Valor: "+desc);
-    System.out.println("LÌquido: "+(salario-(desconto+desc)));
+    System.out.println("L√≠quido: "+(salario-(desconto+desc)));
   }
 }
