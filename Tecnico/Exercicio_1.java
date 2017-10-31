@@ -1,25 +1,25 @@
 import java.util.Scanner;
 
-/*Uma empresa possui um plano de gratificaÁ„o para seus
-funcion·rios.
-? Para quem ganha menos de R$ 800,00 de sal·rio as regras s„o as
+/*Uma empresa possui um plano de gratifica√ß√£o para seus
+funcion√°rios.
+? Para quem ganha menos de R$ 800,00 de sal√°rio as regras s√£o as
 seguintes:
-? Quem tiver 4 ou mais anos de serviÁo, ter· acrÈscimo de 7% ao
-seu sal·rio;
-? Quem tiver menos de 4 anos de serviÁo ter· seu sal·rio acrescido
+? Quem tiver 4 ou mais anos de servi√ßo, ter√° acr√©scimo de 7% ao
+seu sal√°rio;
+? Quem tiver menos de 4 anos de servi√ßo ter√° seu sal√°rio acrescido
 somente de 3%.
-? Para quem ganha R$ 800,00 ou mais, seu sal·rio ter· acrÈscimo de
-2% independente do tempo de serviÁo.
-? AtravÈs de um programa obter dados como:
-? Nome do Funcion·rio,
-? Sal·rio
-? Tempo de ServiÁo (em anos)
-? Calcular o sal·rio lÌquido do funcion·rio (-INSS e IRRF).
+? Para quem ganha R$ 800,00 ou mais, seu sal√°rio ter√° acr√©scimo de
+2% independente do tempo de servi√ßo.
+? Atrav√©s de um programa obter dados como:
+? Nome do Funcion√°rio,
+? Sal√°rio
+? Tempo de Servi√ßo (em anos)
+? Calcular o sal√°rio l√≠quido do funcion√°rio (-INSS e IRRF).
 */
 
 public class Exercicio_1 {
   public static void main (String[] args){
-    //DeclaraÁ„o de Vari·veis
+    //Declara√ß√£o de Vari√°veis
     String nome = " ";
     double salario = 0.0;
     int tempo_s = 0;
@@ -34,14 +34,14 @@ public class Exercicio_1 {
     Scanner ler = new Scanner(System.in);
     
     //Leituras
-    System.out.println("Digite o nome do funcion·rio: ");
+    System.out.println("Digite o nome do funcion√°rio: ");
     nome = ler.nextLine();
-    System.out.println("Digite o sal·rio do funcion·rio: ");
+    System.out.println("Digite o sal√°rio do funcion√°rio: ");
     salario = ler.nextDouble();
-    System.out.println("Digite o tempo de serviÁo do funcion·rio: ");
+    System.out.println("Digite o tempo de servi√ßo do funcion√°rio: ");
     tempo_s = ler.nextInt();
     
-    //Sal·rio Bruto
+    //Sal√°rio Bruto
     if (tempo_s<0) {
       System.out.println("ERRO: Tempo de trabalho negativo?");
     } else if (tempo_s<4 && tempo_s>0) {
@@ -50,7 +50,7 @@ public class Exercicio_1 {
       salario += (salario*0.07);
     }
     
-    //C·lculo INSS
+    //C√°lculo INSS
     if (salario <= 1638.38) {
       inss = "8%";
       desconto += (salario*0.08);
@@ -64,7 +64,7 @@ public class Exercicio_1 {
       inss = "Teto";
       desconto += 513.01;
     } else if (salario > 937.0) {
-      System.out.println("ERR0: Sal·rio n„o pode ser menor que o MinÌmo Nacional!" );
+      System.out.println("ERR0: Sal√°rio n√£o pode ser menor que o Min√≠mo Nacional!" );
     }
     
     //IRRF
@@ -86,10 +86,10 @@ public class Exercicio_1 {
     }
     
     //Print na Tela
-    System.out.println("====== C¡LCULO CONTRACHEQUE ====== \nNome: "+nome);
-    System.out.println("Sal·rio Bruto: "+salario);
+    System.out.println("====== C√ÅLCULO CONTRACHEQUE ====== \nNome: "+nome);
+    System.out.println("Sal√°rio Bruto: "+salario);
     System.out.println("Desconto INSS: "+inss+" Valor: "+desconto);
     System.out.println("Desconto IRRF: "+irrf+" Valor: "+desc);
-    System.out.println("LÌquido: "+(salario-(desconto+desc)));
+    System.out.println("L√≠quido: "+(salario-(desconto+desc)));
   }
 }
