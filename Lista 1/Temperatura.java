@@ -3,8 +3,8 @@ import java.util.*;
 /* Exercicio 3
  * Autor: Camilo Cunha de Azevedo
  * 
- * O programa dever· ler um valor de temperatura e
- * informar se aquele valor È positivo ou negativo.
+ * O programa dever√° ler um valor de temperatura e
+ * informar se aquele valor √© positivo ou negativo.
  */
 
 public class Temperatura {
@@ -17,7 +17,7 @@ public class Temperatura {
     if (t<0) {
       System.out.println("Negativo");
     }else if (t==0){
-      System.out.println("… zero");
+      System.out.println("√â zero");
     }else{
       System.out.println("Positivo");
     }
