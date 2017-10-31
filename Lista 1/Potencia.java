@@ -3,8 +3,8 @@ import java.util.*;
  * Autor: Camilo Cunha de Azevedo
  * Disciplina: LAB POOI
  * 
- * O programa deverá ler um número inteiro ‘A’ e um número inteiro ‘B’
- * O programa deverá mostrar o resultado de A^B
+ * O programa deverÃ¡ ler um nÃºmero inteiro â€˜Aâ€™ e um nÃºmero inteiro â€˜Bâ€™
+ * O programa deverÃ¡ mostrar o resultado de A^B
  */
 
 public class Potencia {
