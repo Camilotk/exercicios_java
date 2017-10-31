@@ -1,12 +1,12 @@
 import java.util.*;
 import javax.swing.*;
 
-/* ExercÌcio 1
+/* Exerc√≠cio 1
  * Autor: Camilo Cunha de Azevedo
  * Disciplina: LAB POOI
  * 
- * O programa dever· calcular o volume de um paralelepÌpedo (mostrar para o usu·rio),
- * sendo que o usu·rio dever· informar a altura, largura e profundidade do objeto: V = a.b.c
+ * O programa dever√° calcular o volume de um paralelep√≠pedo (mostrar para o usu√°rio),
+ * sendo que o usu√°rio dever√° informar a altura, largura e profundidade do objeto: V = a.b.c
  */
 
 public class Paralelepipedo {
@@ -15,7 +15,7 @@ public class Paralelepipedo {
     Double b = 0.0d;
     Double c = 0.0d;
     
-    a = Double.parseDouble(JOptionPane.showInputDialog("Qual È o seu nome?"));
+    a = Double.parseDouble(JOptionPane.showInputDialog("Qual √© o seu nome?"));
     b = Double.parseDouble(JOptionPane.showInputDialog("Informe a largura: "));
     c = Double.parseDouble(JOptionPane.showInputDialog("Informe a profundidade: "));
    
