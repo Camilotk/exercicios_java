@@ -2,8 +2,8 @@ import java.util.*;
 /* Exercicio 14
  * Autor: Camilo Cunha de Azevedo
  * 
- * O programa dever· ler 10 n˙meros inteiros informados pelo usu·rio,
- *  ao final o programa dever· informar qual È o maior valor.
+ * O programa dever√° ler 10 n√∫meros inteiros informados pelo usu√°rio,
+ *  ao final o programa dever√° informar qual √© o maior valor.
  */
 public class Numeros {
   public static void main (String[] args){
