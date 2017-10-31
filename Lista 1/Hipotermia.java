@@ -2,10 +2,10 @@ import java.util.*;
 /* Exercicio 7
  * Autor: Camilo Cunha de Azevedo
  * 
- * O programa deverá ler uma temperatura. 
- * Caso a temperatura estiver abaixo de 20 graus,  o programa deverá informar “hipotermia”, 
- * caso esteja entre 20 e 37,5 deverá informar “temperatura normal”, 
- * caso esteja entre 37,5 e 42 “febre”, caso contrário “perigo”.
+ * O programa deverÃ¡ ler uma temperatura. 
+ * Caso a temperatura estiver abaixo de 20 graus,  o programa deverÃ¡ informar â€œhipotermiaâ€, 
+ * caso esteja entre 20 e 37,5 deverÃ¡ informar â€œtemperatura normalâ€, 
+ * caso esteja entre 37,5 e 42 â€œfebreâ€, caso contrÃ¡rio â€œperigoâ€.
  */
 public class Hipotermia {
   public static void main(String[] args){
