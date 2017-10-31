@@ -1,4 +1,4 @@
-//feito por Camilo Cunha, cód 555062
+//feito por Camilo Cunha, cÃ³d 555062
 
 import javax.swing.JOptionPane;
 
@@ -14,7 +14,7 @@ class Gastos {
     
     while (!(descricao.equals("fim"))) {
       valor = Double.parseDouble(JOptionPane.showInputDialog(null, "Valor do Gasto"));
-      descricao = JOptionPane.showInputDialog(null, "Descrição do Gasto");
+      descricao = JOptionPane.showInputDialog(null, "DescriÃ§Ã£o do Gasto");
       i++;
       
       if (valor>maiorGasto) {
@@ -24,13 +24,13 @@ class Gastos {
       
       media = media+valor;
       
-      if ((descricao.equals("alimentação")) || ((valor<=20) && (valor>=10))) {
+      if ((descricao.equals("alimentaÃ§Ã£o")) || ((valor<=20) && (valor>=10))) {
         contador = (contador+1);
       }
       
     }
     
-    JOptionPane.showMessageDialog(null, "A média dos gastos foi "+(media/i)+"\nDescrição do Maior gasto foi: "+maiorDescricao+"\nO número de gastos em Alimentação ou entre 10 e 20 reais foi: "+contador);
+    JOptionPane.showMessageDialog(null, "A mÃ©dia dos gastos foi "+(media/i)+"\nDescriÃ§Ã£o do Maior gasto foi: "+maiorDescricao+"\nO nÃºmero de gastos em AlimentaÃ§Ã£o ou entre 10 e 20 reais foi: "+contador);
   }
 }
         
