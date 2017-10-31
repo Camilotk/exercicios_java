@@ -3,9 +3,9 @@ import java.util.*;
 /* Exercicio 10
  * Autor: Camilo Cunha de Azevedo
  * 
- *  O programa dever· ler uma letra e um n˙mero N. 
- *  O programa dever· informar se a letra È uma vogal ou n„o,
- *  e caso for uma vogal, dever· mostrar na tela a vogal impressa N vezes. 
+ *  O programa dever√° ler uma letra e um n√∫mero N. 
+ *  O programa dever√° informar se a letra √© uma vogal ou n√£o,
+ *  e caso for uma vogal, dever√° mostrar na tela a vogal impressa N vezes. 
  */
 
 public class PoucaVogal {
@@ -39,9 +39,9 @@ public class PoucaVogal {
     }
     
     if(v){
-      System.out.println("… vogal");
+      System.out.println("√â vogal");
     } else {
-      System.out.println("N„o È vogal");
+      System.out.println("N√£o √© vogal");
     }
     
   }
