@@ -3,10 +3,10 @@ import java.util.*;
 /* Exercicio 12
  * Autor: Camilo Cunha de Azvedo
  *
- * O programa deverá simular um sistema de cofre. A senha secreta é ‘1’, ‘2’, ‘3’. 
- * O programa deverá informar “liberado” caso os valores forem informados exatamente nessa ordem, caso
- * contrário deverá repetir mais 3 vezes. Caso o usuário não acerte até a terceira tentativa, o programa
- * deverá informar que ficara bloqueado. Importante: o valor lido não deverá ser ‘123’ e sim ‘1’, ‘2’ e ‘3’. 
+ * O programa deverÃ¡ simular um sistema de cofre. A senha secreta Ã© â€˜1â€™, â€˜2â€™, â€˜3â€™. 
+ * O programa deverÃ¡ informar â€œliberadoâ€ caso os valores forem informados exatamente nessa ordem, caso
+ * contrÃ¡rio deverÃ¡ repetir mais 3 vezes. Caso o usuÃ¡rio nÃ£o acerte atÃ© a terceira tentativa, o programa
+ * deverÃ¡ informar que ficara bloqueado. Importante: o valor lido nÃ£o deverÃ¡ ser â€˜123â€™ e sim â€˜1â€™, â€˜2â€™ e â€˜3â€™. 
  */
 
 public class Cofre {
@@ -23,7 +23,7 @@ public class Cofre {
     
     //Senha 1
     for (int i = 0; i<3; i++) {
-      System.out.println("Digite o primeiro número da senha: ");
+      System.out.println("Digite o primeiro nÃºmero da senha: ");
       b1 = ler.next().charAt(0);
       
       if (b1 == a1){
@@ -39,7 +39,7 @@ public class Cofre {
     
     //Senha 2
     for (int i = 0; i<3; i++) {
-      System.out.println("Digite o segundo número da senha: ");
+      System.out.println("Digite o segundo nÃºmero da senha: ");
       b1 = ler.next().charAt(0);
       
       if (b1 == a2){
@@ -55,7 +55,7 @@ public class Cofre {
     
      //Senha 3
       for (int i = 0; i<3; i++) {
-      System.out.println("Digite o terceiro número da senha: ");
+      System.out.println("Digite o terceiro nÃºmero da senha: ");
       b1 = ler.next().charAt(0);
       
       if (b1 == a3){
