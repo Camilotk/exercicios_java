@@ -1,0 +1,38 @@
+Suponha que exista uma classe derivada B que herda de uma classe base A.
+Se A tem um atributo att1 privado,
+B herdará esse atributo,
+mas não poderá acessá-lo de dentro da classe B.
+
+1) A tem getAtt1 e setAtt1. Nesse caso, se B precisar usar o atributo att1, é melhor usar getAtt1
+   e setAtt1 ou modificar a visibilidade de att1 para protected e usar att1 diretamente em B?
+   Justifique sua linha de raciocínio.
+   • Depende da modelagem do programa e da sensibilidade desse dado. Dados muito sensíveis como
+   • documentos devem ter uma certa proteção no acesso para garantir que não haja mal uso por
+   • parte do usuário, nesses casos criar um Get ou Set (levando em conta a necessidade real
+   • do código) é a melhor opção, porém em dados menos sensiveis como uma lista de preferencias
+   • de restaurantes talvez (e isso é algo muito raro, mas depende muito do Sistema) pode ser
+   • melhor mudar a visibilidade para que o código tenha uma maior fluência (ou seja, não precisando
+   • controlar o acesso, não há porque usar Get/Set).
+   •
+   • Mas nesse caso sim, usar Get e Set já que é mais seguro do que arriscar deixar o uso na mão do
+   • Usuário.
+
+2) A não tem getAtt1 e setAtt1. Nesse caso, se B precisar usar o atributo att1, é melhor criar
+   um getAtt1 e setAtt1 em A ou modificar a visibilidade de att1 para protected e usar att1
+   diretamente em B? Justifique sua linha de raciocínio.
+   • Mesma resposta.
+
+
+3) Pense em um exemplo onde attr1 deva ter visibilidade protected e não ser private com
+   getters e setters.
+   • Isso é possível em dois casos, o primeiro como já citado anteriormente quando é um
+   • dado pouquíssimo (mesmo) seja necessário controle de execução/acesso e necessite-se
+   • do acesso direto.
+   • Porém, também permite que uma classe de outro pacote receba por herança o atributo
+   • o que pode ser útil quando há  a necessidade de acesso direto em outro pacote.
+   • Um exemplo prático disto pode ser um Array de arquivos em um site de compartilhamento
+   • onde não haja qualquer tratamento do que está sendo inserido/baixado. Já que não há a
+   • necessidade de verificações desses arquivos isso pode ser gravado diretamente na variavel
+   • e também acessado, dispensando criar um Get e Set redundantes (mas isso é muito hipotético
+   • já que no mundo real a maioria dos dados passa por algum tipo de verificação mesmo que
+   • minimo - ex: para ver se tem virus, se é das extensões permitidas...).
