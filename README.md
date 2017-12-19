@@ -6,3 +6,4 @@ As pastas estão organizadas conforme o nome da disciplina:
 - POO I: Disciplina de Programação Orientada a Objetos em Java (Presencial) e Laboratório de Programação Orientada a Objetos (EAD), ambas cursadas no segundo semestre de 2017. Todas as pastas estão organizadas conforme o nome da lista de exercicios e contem o PDF com o Edital de cada Trabalho/Exercicio.
 - POO II: Em breve.
 - Técnico: Arquivos antigos das cadeiras de Programação I (Java) e Programação II (Java Orientado a Objetos) cursados durante o técnico em Informática na Univates entre 2012-2014.
+Teste do Git
