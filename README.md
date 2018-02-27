@@ -1,5 +1,5 @@
 # Sobre
-Exercicios das cadeiras de programação em Java I e II no Instituto Federal do Rio Grande do Sul, as disciplinas se dividiam em Presencial (para o aprendizado da linguagem) e EAD para a realização dos exercicios e lista de exercicios. Utilizei a plataforma GitHub como meio de organizar os Códigos e compartilhar os resultados e soluções com os colegas.
+Exercicios das cadeiras de programação orientada a objetos I no Instituto Federal do Rio Grande do Sul, as disciplinas se dividiam em Presencial (para o aprendizado da linguagem) e EAD para a realização dos exercicios e lista de exercicios. Utilizei a plataforma GitHub como meio de organizar os Códigos e compartilhar os resultados e soluções com os colegas.
 
 # Organização
 As pastas estão organizadas conforme o nome da disciplina:
