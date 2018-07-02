@@ -1,0 +1,69 @@
+• os construtores de HashMap
+
+HashMap()
+Cria um HashMap com a capacidade default (16) e o parâmetro de crescimento padrão (0.75)
+quando ele atinge 75% de uso sua capacidade dobra e assim por diante.
+
+HashMap(int initialCapacity)
+Cria um HashMap com a capacidade inicial setada.
+
+HashMap(int initialCapacity, float loadFactor)
+Cria um HashMap com a capacidade inicial e taxa de crescimento setados.
+
+HashMap(Map<? extends K,? extends V> m)
+Constroi um novo HashMAp com os mesmos mapeamentos que são especificados no Map.
+
+• o método put
+
+Código do método put:
+public V put(K key, V value) 
+{
+    if (key == null)				// Checa se a chave é nula
+       return putForNullKey(value); // Caso seja retorna um erro e encerra
+    int hash = hash(key.hashCode()); // Gera um hash com a chave e armazena em uma var
+    int i = indexFor(hash, table.length); // O método indexFor retorna exatamente o indice a armazenar
+    
+    /*
+     * Aqui vem uma parte muito importante que explica o que acontece quando dois hashs tem o mesmo
+     * valor (ex: Aa e BB). Para resolver isso é usado uma estrutura parecida com a LinkedList
+     * em que cada estrutura de dados vai possuir um atributo que aponta para o próximo objeto.
+     * Em caso de Colisão o HashMap checa o valor do próximo atributo se for nulo coloca o obj Entry
+     * nessa posição, caso contrário continua a execução até ser e coloca o objeto ali 
+     */
+     
+    for (Entry<K,V> e = table[i]; e != null; e = e.next) 
+    {
+        Object k;
+        if (e.hash == hash && ((k = e.key) == key || key.equals(k))) 
+         {
+             V oldValue = e.value;
+             e.value = value;
+             e.recordAccess(this);
+             return oldValue;
+          }
+     }
+     modCount++;
+     addEntry(hash, key, value, i);
+     return null;
+ }
+
+• o método get
+
+public V get(Object key) 
+{
+    if (key == null) 
+       return getForNullKey(); // Mesmo que o put
+     int hash = hash(key.hashCode()); // Mesmo que o hash
+     
+     /*
+      * 
+      *
+      */
+     for (Entry<K,V> e = table[indexFor(hash, table.length)];e != null;e = e.next) 
+     {
+         Object k;
+         if (e.hash == hash && ((k = e.key) == key || key.equals(k))) // caso o hash correto é encontrado ele é retornado
+             return e.value; // retorna o hash correto e termina
+     }
+         return null; // caso contrário retorna nulo
+ }
