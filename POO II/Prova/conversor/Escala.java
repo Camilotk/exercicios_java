@@ -7,7 +7,7 @@ package conversor;
 
 /**
  *
- * @author camilo.070695
+ * @author camilo
  */
 public class Escala {
     private String nome;
