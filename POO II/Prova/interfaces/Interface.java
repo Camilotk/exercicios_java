@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 /**
  *
- * @author camilo.070695
+ * @author camilo
  */
 public class Interface extends javax.swing.JFrame {
 
