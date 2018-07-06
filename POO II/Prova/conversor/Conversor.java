@@ -10,7 +10,7 @@ import java.util.List;
 
 /**
  *
- * @author camilo.070695
+ * @author camilo
  */
 public class Conversor implements Conversoes {
     private List<Escala> escalas =  new ArrayList<>();
@@ -55,7 +55,6 @@ public class Conversor implements Conversoes {
             double c = (valor - 273);
             escalas.get(0).setValor(c);
         } else if (origem.equals("Celsius") && destino.equals("Fahrenheit")) {
-            //F = 1, 8 ⋅ 37 + 32
            double f = ( 1.8 * valor + 32 );
            escalas.get(1).setValor(f);
         } else if (origem.equals("Fahrenheit") && destino.equals("Celsius")) {
