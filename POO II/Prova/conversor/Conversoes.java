@@ -7,7 +7,7 @@ package conversor;
 
 /**
  *
- * @author camilo.070695
+ * @author camilo
  */
 public interface Conversoes {
     void converte (double valor, String origem, String destino);
